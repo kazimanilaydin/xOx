@@ -1,0 +1,31 @@
+
+*{margin: 0;padding: 0;font:inherit;font-weight: normal;}
+html{font-family: sans-serif, arial;font-size:14px;}
+
+.scroll::-webkit-scrollbar {width: 8px;}
+.scroll::-webkit-scrollbar-track {background: #cecece;}
+.scroll::-webkit-scrollbar-thumb {background: #a4a4a4;}
+
+.background{
+  background-image: url(../img/overlay.png), linear-gradient(60deg, rgba(123, 18, 0, 0.5) 5%, rgba(109, 0, 0, 0.35)), url(../img/background.jpg);
+  background-image: url(../img/overlay.png), -moz-linear-gradient(60deg, rgba(123, 18, 0, 0.5) 5%, rgba(109, 0, 0, 0.35)), url(../img/background.jpg);
+  background-image: url(../img/overlay.png), -webkit-linear-gradient(60deg, rgba(123, 18, 0, 0.5) 5%, rgba(109, 0, 0, 0.35)), url(../img/background.jpg);
+  background-image: url(../img/overlay.png), -ms-linear-gradient(60deg, rgba(123, 18, 0, 0.5) 5%, rgba(109, 0, 0, 0.35)), url(../img/background.jpg);
+  background-repeat: repeat,  no-repeat,  no-repeat;
+  background-size: 100px 100px, cover,    cover;
+  background-position: top left,  center center,  top center;
+  background-attachment: fixed,   fixed,  fixed;
+  overflow: hidden;
+  transition:all .5s ease;
+}
+
+.content-wrapper{max-width:480px;margin:0 auto;text-align: center;}
+.content-header{padding: 30px 0px 10px;font-size: 32px;color: white;position: relative;}
+.logo-text{color:black;}
+.game-box{margin: 60px 0 20px;}
+.blocks > div:nth-child(1), .blocks > div:nth-child(2), .blocks > div:nth-child(3), .blocks > div:nth-child(4), .blocks > div:nth-child(5), .blocks > div:nth-child(6) {border-bottom: 3px solid #fff;}
+.blocks > div:nth-child(2), .blocks > div:nth-child(5), .blocks > div:nth-child(8) {border-left: 3px solid #fff;border-right: 3px solid #fff;}
+.block{float:left;width:32%;cursor: pointer; }
+.square {padding: 10px;height: 120px;color: white;font-size: 80px;font-family: cursive;}
+.logo-text-block{text-align:center;cursor:pointer;}
+.winner-text{margin: 40px 0;float: left;font-size: 32px;width: 100%;text-align:center;color: white;}
